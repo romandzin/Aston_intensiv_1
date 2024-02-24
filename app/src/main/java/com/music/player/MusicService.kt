@@ -38,7 +38,6 @@ class MusicService : Service() {
     val deathTimer = object : CountDownTimer(10000, 1000) {
         override fun onTick(millisUntilFinished: Long) {
             if (isBound) this.cancel()
-            Log.d("tag", "working")
         }
 
         override fun onFinish() {
